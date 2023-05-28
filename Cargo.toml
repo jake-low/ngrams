@@ -1,0 +1,15 @@
+[package]
+name = "ngrams"
+version = "1.0.0"
+description = "Calculates ngram frequencies in text files"
+authors = ["Jake Low <hello@jakelow.com>"]
+homepage = "https://github.com/jake-low/ngrams"
+repository = "https://github.com/jake-low/ngrams"
+license = "ISC"
+edition = "2021"
+
+[dependencies]
+clap = { version = "4.2", features = ["derive", "cargo"] }
+counter = "0.5"
+serde_json = "1.0"
+utf8-read = "0.4"
