@@ -21,6 +21,17 @@ $ echo "she sells seashells by the seashore" | ngrams -n 2
 1 th
 ```
 
+## Installation
+
+You can install `ngrams` via Homebrew.
+
+```
+brew install jake-low/tools/ngrams
+```
+
+Alternately, if you have a Rust toolchain installed you can download the source code for a [release](https://github.com/jake-low/ngrams/releases) and build it with `cargo build`.
+
+
 ## Usage
 
 ```
