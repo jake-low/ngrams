@@ -76,6 +76,26 @@ echo "she sells seashells by the seashore" | ngrams -n 2 --json
 ]
 ```
 
+## Bar charts
+
+It can be useful to visualize the relative frequencies of ngrams graphically. You can pipe the output of `ngrams` into [`barchart`](https://github.com/jake-low/barchart) to accomplish this.
+
+Here's a barchart showing the 10 most common trigrams in Herman Melville's novel _Moby-Dick_.
+
+```
+$ ngrams -n 3 -p moby-dick.txt | head | barchart
+  3.252% the ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+  1.392% ing ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+  1.298% and ■■■■■■■■■■■■■■■■■■■■■■■■■■■
+  0.685% his ■■■■■■■■■■■■■■■
+  0.673% hat ■■■■■■■■■■■■■■
+  0.602% her ■■■■■■■■■■■■■
+  0.597% tha ■■■■■■■■■■■■■
+  0.540% ere ■■■■■■■■■■■■
+  0.496% all ■■■■■■■■■■■
+  0.430% for ■■■■■■■■■
+```
+
 ## License
 
 The source code for `ngrams` is available under the ISC license. See the LICENSE file for details.
